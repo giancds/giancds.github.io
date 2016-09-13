@@ -1,6 +1,6 @@
 ---
 layout: publ
-category: pubs
+category: mypub
 permalink: /about/publications/
 title: "Sample Publications"
 published: true
@@ -9,10 +9,10 @@ tags:
   - papers
   - articles
   - research
-comments: true
+comments: false
 modified: "2016-02-13"
 bibtex: "/files/mypubs.bib"
-#bibtex: "https://giancds.github.io/files/mypubs.bib"
+#bibtex: "http://foo-alternate.com/files/mypubs.bib"
 show_meta: true
 noindex: false
 nofollow: true
@@ -41,4 +41,6 @@ style: |
 
 {% endcomment %}
 
-If category is *mypubs*, then html content from bibtex file at `_includes/mypubs.html` will be shown below.
+Note that some of the older publications (previous to 2014) are written in Portuguese.
+
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fgiancds.github.io%2Ffiles%2Fmypubs.bib&jsonp=1"></script>
