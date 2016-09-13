@@ -2,9 +2,9 @@
 layout: publ
 category: mypub
 permalink: /about/publications/
-title: "Sample Publications"
+title: "Current list of publications"
 published: true
-description: "Sample publication page"
+description: "Giancarlo Salton's current list of publications"
 tags:
   - papers
   - articles
@@ -41,6 +41,6 @@ style: |
 
 {% endcomment %}
 
-Note that some of the older publications (previous to 2014) are written in Portuguese.
+Note that some of the older publications (previous to 2014) are only available in Portuguese.
 
 <script src="https://bibbase.org/show?bib=https%3A%2F%2Fgiancds.github.io%2Ffiles%2Fmypubs.bib&jsonp=1"></script>

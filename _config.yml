@@ -10,8 +10,8 @@ encoding: utf-8
 title:               Giancarlo Salton's personal website
 #tagline:             'foo's website
 description:         Ph.D. student passionate about Machine Learning and Natural Language Processing.
-# url: https://giancds.github.io
-url: http://localhost:4000
+url: https://giancds.github.io
+# url: http://localhost:4000
 baseurl: ""
 urlimg: "/images/"
 markdown: kramdown

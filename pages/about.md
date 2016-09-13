@@ -30,7 +30,8 @@ tags:
 </span>
 </div>
 
-Hi I'm Giancarlo (you may call me Gian if you'd like). I'm a Brazilian Ph.D. student at Dublin Institute of Technology in Ireland, supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
+Hi I'm Giancarlo (you may call me Gian if you'd like - my full name is generally used only by my mom when she is mad at me).
+I'm a Brazilian Ph.D. student at Dublin Institute of Technology in Ireland, supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
 and [dr. Robert J. Ross](http://www.robertjross.org/).
 
 I'm passionate about Machine Learning and Natural Language Processing, specially about Machine Translation. I'm into Deep Learning, Pokemon Go and Olympic Weightlifting. I read a lot about

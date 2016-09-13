@@ -5,15 +5,13 @@ title: Personal Homepage of Giancarlo Salton
 description: "Blogging on ...."
 ---
 
-## [lanyon-plus](https://github.com/dyndna/lanyon-plus)
+Welcome to my personal website. My name is Giancarlo Salton (you can call me Gian if you'd like). I'm doing my Ph.D.
+("*Recognizing and Translating Idioms for English/Brazilian-Portuguese Machine Translation*") at
+the [Dublin Institute of Technology](http://www.dit.ie/), supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
+and [dr. Robert J. Ross](http://www.robertjross.org/). You can learn more about me <a href="{{ site.url }}/about">here</a>
+and you can find an updated list of my plublications <a href="{{ site.url }}/about/publications/">here</a>.
 
-Based on Jekyll theme: [Lanyon](http://lanyon.getpoole.com) by [**Mark Otto**](https://github.com/mdo)
-
-* add-ons by [Samir Amin](http://sbamin.com)
-* [Site features]({{ site.url}}/disclosure#i-classfa-fa-thumbs-o-up-credits-for-site-featuresi)
-* License: Open sourced under the [MIT license](http://sbamin.com/disclosure/#theme-major-credit--license).
-
-Maximum four posts on front page where first two posts are featured, and remaining are date sorted.
+If you like what you see, don't forget to <a href="{{ site.url }}/contact">contact</a> me and say hello!
 
 {% if site.twitter_widget_id %}
 <div class="text-tweets">
@@ -33,7 +31,7 @@ Maximum four posts on front page where first two posts are featured, and remaini
 </script>
 </div>
 {% else %}
-Twitter stream will show up here if `twitter_widget_id` is present is `_config.yml`. [Demo](http://sbamin.com)
+<!-- Twitter stream will show up here if `twitter_widget_id` is present is `_config.yml`. [Demo](http://sbamin.com) -->
 {% endif %}
 
 <div class="posts">
