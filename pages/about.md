@@ -30,10 +30,10 @@ tags:
 </span>
 </div>
 
-Hi I'm Giancarlo. I'm a Brazilian Ph.D. student at Dublin Institute of Technology in Ireland, supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
+Hi I'm Giancarlo (you may call me Gian if you'd like). I'm a Brazilian Ph.D. student at Dublin Institute of Technology in Ireland, supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
 and [dr. Robert J. Ross](http://www.robertjross.org/).
 
 I'm passionate about Machine Learning and Natural Language Processing, specially about Machine Translation. I'm into Deep Learning, Pokemon Go and Olympic Weightlifting. I may not be not a good swimmer
 but I can drink 5 cups of coffee in just one day!
 
-Here is a list of my current list publications (both in Portuguese and English).
+<a href="{{ site.url }}/about/publications/">Here</a> is a list of my current list publications (both in Portuguese and English).

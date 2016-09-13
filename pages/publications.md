@@ -1,6 +1,6 @@
 ---
 layout: publ
-category: mypubs
+category: pubs
 permalink: /about/publications/
 title: "Sample Publications"
 published: true
@@ -12,7 +12,7 @@ tags:
 comments: true
 modified: "2016-02-13"
 bibtex: "/files/mypubs.bib"
-#bibtex: "http://foo-alternate.com/files/mypubs.bib"
+#bibtex: "https://giancds.github.io/files/mypubs.bib"
 show_meta: true
 noindex: false
 nofollow: true
@@ -23,11 +23,11 @@ sitemap:
 style: |
   .container {
         max-width: 48rem;
-    } 
+    }
 ---
 
 {% comment %}
-<!-- bibbase.org should work with following code unless you are hosting domain over https. --> 
+<!-- bibbase.org should work with following code unless you are hosting domain over https. -->
 
 {% if page.bibtex %}
  {% if page.bibtex contains 'http' %}

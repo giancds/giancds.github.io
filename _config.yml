@@ -11,8 +11,8 @@ title:               Giancarlo Salton's personal website
 #tagline:             'foo's website
 description:         Ph.D. student passionate about Machine Learning and Natural Language Processing.
 # url: https://giancds.github.io
-url: https://localhost:4000
-baseurl: "/"
+url: http://localhost:4000
+baseurl: ""
 urlimg: "/images/"
 markdown: kramdown
 paginate: 5
@@ -84,8 +84,6 @@ links:
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
-  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
