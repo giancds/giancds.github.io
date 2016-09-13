@@ -1,22 +1,22 @@
 - name: Twitter
-  url: https://twitter.com/abcd
+  url: https://twitter.com/giancds
   class: fa fa-twitter-square
-  title: "Follow me @foo"
+  title: "Follow me @giancds"
 
 - name: Google Plus
-  url: https://plus.google.com/+foo
+  url: https://plus.google.com/+giancds
   class: fa fa-google-plus-square
-  title: "Follow me +foo"
+  title: "Follow me +giancds"
 
 - name: GitHub
-  url: https://github.com/xyz123abc
+  url: https://github.com/giancds
   class: fa fa-github-square
   title: Code repository
 
 - name: Contact
   url: "/contact/"
   class: fa fa-envelope-square
-  title: "Reach Us"
+  title: "Reach Me"
 
 - name: RSS
   url: "/feed.xml"

@@ -12,7 +12,7 @@ title:               Giancarlo Salton's personal website
 description:         Ph.D. student passionate about Machine Learning and Natural Language Processing.
 url: https://giancds.github.io
 baseurl: ""
-urlimg: "/https://giancds.github.io/images/"
+urlimg: "/images/"
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num"
