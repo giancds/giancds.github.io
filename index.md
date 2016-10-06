@@ -9,7 +9,7 @@ Welcome to my personal website. My name is Giancarlo Salton (you can call me Gia
 ("*Recognizing and Translating Idioms for English/Brazilian-Portuguese Machine Translation*") at
 the [Dublin Institute of Technology](http://www.dit.ie/), supervised by [dr. John D. kelleher](http://www.comp.dit.ie/jkelleher/)
 and [dr. Robert J. Ross](http://www.robertjross.org/). You can learn more about me <a href="{{ site.url }}/about">here</a>
-and you can find an updated list of my plublications <a href="{{ site.url }}/about/publications/">here</a>.
+and you can find an updated list of my publications <a href="{{ site.url }}/about/publications/">here</a>.
 
 If you like what you see, don't forget to <a href="{{ site.url }}/contact">contact</a> me and say hello!
 
