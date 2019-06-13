@@ -181,9 +181,9 @@
 <p>O <em>machine learning</em> supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de <strong>variáveis descritivas</strong> (também chamadas de <strong><em>features</em></strong>) e uma <strong>variável alvo</strong> (também chamada de <strong><em>target</em></strong>). Esta forma de <em>machine learning</em> gera modelos que podem ser aplicados a dois
 tipos de problemas:</p>
 
-<p>    i. <strong>regressão</strong> <script type="math/tex">\rightarrow</script> prever um <em>target</em> contínuo</p>
+<p>    i. <strong>regressão</strong> $\rightarrow$ prever um <em>target</em> contínuo</p>
 
-<p>    ii. <strong>regressão</strong> <script type="math/tex">\rightarrow</script> prever um <em>target</em> categórico</p>
+<p>    ii. <strong>regressão</strong> $\rightarrow$ prever um <em>target</em> categórico</p>
 
 <p>Devido ao fato de o modelo aprendido em <em>machine learning</em> descrever as relações entre <em>features</em> e <em>targets</em>, é necessário o levantamento de um conjunto de dados (também chamado de <em>dataset</em>) que contenha exemplos (também chamados de <em>datapoints</em>) com os valores das <em>features</em> preenchidas e o <em>target</em> correto associado àquelas <em>features</em>. Por padrão, um dataset segue o formato apresentado na Tabela 1.</p>
 
@@ -196,7 +196,7 @@ tipos de problemas:</p>
   \toprule  <br />
     \multicolumn{6}{c}{\features} &amp; &amp; \target <br />
       \cmidrule{1-6}  \cmidrule{8-8}
-    <script type="math/tex">x_1</script>  &amp; <script type="math/tex">x_2</script> &amp; <script type="math/tex">x_3</script> &amp; <script type="math/tex">x_4</script> &amp; <script type="math/tex">x_5</script> &amp; <script type="math/tex">x_6</script> &amp; &amp; <script type="math/tex">y</script> <br />
+    $x_1$  &amp; $x_2$ &amp; $x_3$ &amp; $x_4$ &amp; $x_5$ &amp; $x_6$ &amp; &amp; $y$ <br />
   \midrule
   — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
   — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
@@ -232,7 +232,7 @@ tipos de problemas:</p>
   8 &amp; 5.8 &amp; 2.7 &amp; 5.1 &amp; 1.9 &amp; virginica <br />
   9 &amp; 7.1 &amp; 3.0 &amp; 5.9 &amp; 2.1 &amp; virginica <br />
   \midrule
-    &amp; <script type="math/tex">x_1</script> &amp; <script type="math/tex">x_2</script> &amp; <script type="math/tex">x_3</script> &amp; <script type="math/tex">x_4</script> &amp; <script type="math/tex">y</script> <br />
+    &amp; $x_1$ &amp; $x_2$ &amp; $x_3$ &amp; $x_4$ &amp; $y$ <br />
   \bottomrule
   \end{tabular</em>}
   \label{tab:iris}
@@ -298,7 +298,7 @@ tipos de problemas:</p>
 
 <p>Vamos ilustrar a ideia de consistência e imperfeição com um exemplo. Imaginemos que uma rede de supermercados nos contratou para desenvolver um modelo de <em>machine learning</em> para realizar predições sobre seus consumidores. Estas predições devem classificar os consumidores nos grupos <code class="highlighter-rouge">Famílias</code>, <code class="highlighter-rouge">Casais sem filhos</code> e <code class="highlighter-rouge">Solteiros</code>.</p>
 
-<p>Esta rede de supermercados está disposta a lhe entregar um dataset com três <em>features</em> binárias que podem assumir os valores <script type="math/tex">\{True; False\}</script>. Como três <em>features</em> binárias produzem um total de <script type="math/tex">2^3=8</script> combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.</p>
+<p>Esta rede de supermercados está disposta a lhe entregar um dataset com três <em>features</em> binárias que podem assumir os valores ${True; False}$. Como três <em>features</em> binárias produzem um total de $2^3=8$ combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.</p>
 
 <p>INCLUIR TABELA</p>
 
@@ -310,7 +310,7 @@ tipos de problemas:</p>
 
 <p>Se considerarmos os <em>datapoints</em> obtidos pela rede de supermercados, podemos eliminar combinações as quais possuem o target <code class="highlighter-rouge">Grupo</code> diferentes dos valores reais obtidos, como demonstrado na Tabela 8. As combinações restantes são aquelas chamadas de consistentes com o <em>dataset</em> da Tabela 7. Em outras palavras, estas combinações restantes conseguem produzir a resposta correta para cada <em>datapoint</em> do dataset.</p>
 
-<p>Entretanto, ainda temos um problema: das 8 possíveis combinações das <em>features</em> binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações <script type="math/tex">\mathbb{M}_2</script>,	<script type="math/tex">\mathbb{M}_4</script> e <script type="math/tex">\mathbb{M}_5</script> são combinações consistentes com o <em>dataset</em> e ao mesmo tempo divergem quanto ao <code class="highlighter-rouge">Grupo</code> que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o <em>dataset</em> que dizemos que o <em>machine learning</em> é um problema mal-posto, pois não há uma solução para esse problema!</p>
+<p>Entretanto, ainda temos um problema: das 8 possíveis combinações das <em>features</em> binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações $\mathbb{M}_2$,	$\mathbb{M}_4$ e $\mathbb{M}_5$ são combinações consistentes com o <em>dataset</em> e ao mesmo tempo divergem quanto ao <code class="highlighter-rouge">Grupo</code> que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o <em>dataset</em> que dizemos que o <em>machine learning</em> é um problema mal-posto, pois não há uma solução para esse problema!</p>
 
 <p>Consistência pode ser interpretada como uma forma de <strong>memorização</strong> por parte do modelo. Contudo, os <em>datapoints</em> em um dataset podem conter diversas formas de ruídos, como por exemplo preenchimentos incorretos de valores, valores faltando, até mesmo exceções onde o valor é de fato correto mas tão incomum que parece estar incorreto. Nestes casos, a memorização torna-se uma característica indesejada para um modelo de <em>machine learning</em>.</p>
 
