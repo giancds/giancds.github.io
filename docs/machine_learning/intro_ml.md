@@ -14,9 +14,9 @@ Embora alguns autores definam *machine learning* como sendo o **aprendizado atra
 O *machine learning* supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de **variáveis descritivas** (também chamadas de ***features***) e uma **variável alvo** (também chamada de ***target***). Esta forma de *machine learning* gera modelos que podem ser aplicados a dois
 tipos de problemas:
 
-&nbsp;&nbsp;&nbsp;&nbsp;i. **regressão** $\rightarrow$ prever um *target* contínuo
+&nbsp;&nbsp;&nbsp;&nbsp;i. **regressão** $$\rightarrow$$ prever um *target* contínuo
 
-&nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão** $\rightarrow$ prever um *target* categórico
+&nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão** $$\rightarrow$$ prever um *target* categórico
 
 Devido ao fato de o modelo aprendido em *machine learning* descrever as relações entre *features* e *targets*, é necessário o levantamento de um conjunto de dados (também chamado de *dataset*) que contenha exemplos (também chamados de *datapoints*) com os valores das *features* preenchidas e o *target* correto associado àquelas *features*. Por padrão, um dataset segue o formato apresentado na Tabela 1.
 
@@ -29,7 +29,7 @@ Devido ao fato de o modelo aprendido em *machine learning* descrever as relaçõ
   \toprule    
     \multicolumn{6}{c}{\features} & & \target \\
       \cmidrule{1-6}  \cmidrule{8-8}
-    $x_1$  & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$ & & $y$ \\
+    $$x_1$$  & $$x_2$$ & $$x_3$$ & $$x_4$$ & $$x_5$$ & $$x_6$$ & & $$y$$ \\
   \midrule
   --- & --- & --- & --- & --- & --- & & ---	\\  
   --- & --- & --- & --- & --- & --- & & ---	\\  
@@ -66,7 +66,7 @@ A Tabela 2 apresenta um exemplo de um *dataset* real. Esta é uma amostra do dat
   8 & 5.8 & 2.7 & 5.1 & 1.9 & virginica \\
   9 & 7.1 & 3.0 & 5.9 & 2.1 & virginica \\
   \midrule
-    & $x_1$ & $x_2$ & $x_3$ & $x_4$ & $y$ \\
+    & $$x_1$$ & $$x_2$$ & $$x_3$$ & $$x_4$$ & $$y$$ \\
   \bottomrule
   \end{tabular*}
   \label{tab:iris}
@@ -94,7 +94,7 @@ Abaixo seguem algumas definições importantes que são utilizadas em machine le
 
 A Figura 1 ilustra o processo de “aprendizado” de *machine learning*. Um *dataset* contendo *features* e *targets* é fornecido como entrada para um algoritmo que por sua vez gera um modelo. Depois que o modelo for gerado, podemos pegar uma *query* e obter uma predição para determinar qual a resposta (i.e., o *target*) correta para aquela instância. A Figura 2 ilustra o processo de predição.
 
-#### 1.1 - Um pequeno exemplo
+### 1.1 - Um pequeno exemplo
 
 Suponhamos que o *dataset* contido na Tabela 3 nos foi fornecido e precisamos extrair manualmente um modelo para fazer predições. Qual(is) a(s) regra(s) que definem as relações entre *features* e *target* deste dataset?
 
@@ -136,7 +136,7 @@ A forma mais fácil e eficaz para gerar um modelo é buscar dentre os modelos po
 
 Vamos ilustrar a ideia de consistência e imperfeição com um exemplo. Imaginemos que uma rede de supermercados nos contratou para desenvolver um modelo de *machine learning* para realizar predições sobre seus consumidores. Estas predições devem classificar os consumidores nos grupos `Famílias`, `Casais sem filhos` e `Solteiros`.
 
-Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores $\{True; False\}$. Como três *features* binárias produzem um total de $2^3=8$ combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.
+Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores $$\{True; False\}$$. Como três *features* binárias produzem um total de $$2^3=8$$ combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.
 
 INCLUIR TABELA
 
@@ -148,7 +148,7 @@ Suponhamos então que a rede de supermercados conduziu uma pesquisa entre seus c
 
 Se considerarmos os *datapoints* obtidos pela rede de supermercados, podemos eliminar combinações as quais possuem o target `Grupo` diferentes dos valores reais obtidos, como demonstrado na Tabela 8. As combinações restantes são aquelas chamadas de consistentes com o *dataset* da Tabela 7. Em outras palavras, estas combinações restantes conseguem produzir a resposta correta para cada *datapoint* do dataset.
 
-Entretanto, ainda temos um problema: das 8 possíveis combinações das *features* binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações $\mathbb{M}_2$,	$\mathbb{M}_4$ e $\mathbb{M}_5$ são combinações consistentes com o *dataset* e ao mesmo tempo divergem quanto ao `Grupo` que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o *dataset* que dizemos que o *machine learning* é um problema mal-posto, pois não há uma solução para esse problema!
+Entretanto, ainda temos um problema: das 8 possíveis combinações das *features* binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações $$\mathbb{M}_2$$,	$$\mathbb{M}_4$$ e $$\mathbb{M}_5$$ são combinações consistentes com o *dataset* e ao mesmo tempo divergem quanto ao `Grupo` que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o *dataset* que dizemos que o *machine learning* é um problema mal-posto, pois não há uma solução para esse problema!
 
 Consistência pode ser interpretada como uma forma de **memorização** por parte do modelo. Contudo, os *datapoints* em um dataset podem conter diversas formas de ruídos, como por exemplo preenchimentos incorretos de valores, valores faltando, até mesmo exceções onde o valor é de fato correto mas tão incomum que parece estar incorreto. Nestes casos, a memorização torna-se uma característica indesejada para um modelo de *machine learning*.
 
@@ -162,7 +162,7 @@ O *machine learning* faz uma série de suposições que auxiliam a definir os cr
 
 Por exemplo, consideremos o Iterative Dichotomizer 3 - (ID3), o algoritmo padrão para métodos baseados em informação<sup>3</sup>. Este algoritmo possui um *restriction bias* que o limita a aprender um modelo em formato de árvore que codifica em cada galho um “teste” em uma determinada *feature* enquanto o seu *preference bias* limita-o a buscar pela árvore que contenha o menor número possível de níveis.
 
-#### 2.1 - O que pode dar errado com o *machine learning*?
+### 2.1 - O que pode dar errado com o *machine learning*?
 
 Até agora vimos que o *machine learning* pode ser bastante útil para criarmos agentes inteligentes que podem ser úteis em alguns tipos de problemas. Vimos também que devido ao efeito do *inductive bias*, modelos podem aprender a generalizar além do *dataset*. No entanto, se escolhermos o *inductive bias* errado, o modelo aprendido poderá apresentar dois tipos de problemas: *underfitting* e *overfitting*. 
 
