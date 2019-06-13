@@ -29,11 +29,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Eu escrevo sobre inteligência artificial, machine learning, deep learning e ciência de dados em geral." />
 <meta property="og:description" content="Eu escrevo sobre inteligência artificial, machine learning, deep learning e ciência de dados em geral." />
-<link rel="canonical" href="http://localhost:4000/docs/machine_learning/intro_ml.tex.html" />
-<meta property="og:url" content="http://localhost:4000/docs/machine_learning/intro_ml.tex.html" />
+<link rel="canonical" href="http://localhost:4000/docs/machine_learning/intro_ml.html" />
+<meta property="og:url" content="http://localhost:4000/docs/machine_learning/intro_ml.html" />
 <meta property="og:site_name" content="Blog do Gian" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/docs/machine_learning/intro_ml.tex.html","description":"Eu escrevo sobre inteligência artificial, machine learning, deep learning e ciência de dados em geral.","@type":"WebPage","headline":"Introdução ao Machine Learning","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/docs/machine_learning/intro_ml.html","description":"Eu escrevo sobre inteligência artificial, machine learning, deep learning e ciência de dados em geral.","@type":"WebPage","headline":"Introdução ao Machine Learning","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -128,17 +128,17 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="http://localhost:4000/docs/machine_learning/intro_ml.html" class="navigation-list-link">Introdução ao Machine Learning</a>
+                      <a href="http://localhost:4000/docs/machine_learning/intro_ml.html" class="navigation-list-link active">Introdução ao Machine Learning</a>
                       
                     </li>
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="http://localhost:4000/docs/machine_learning/intro_ml.tex.html" class="navigation-list-link active">Introdução ao Machine Learning</a>
+                      <a href="http://localhost:4000/docs/machine_learning/intro_ml.tex.html" class="navigation-list-link">Introdução ao Machine Learning</a>
                       
                     </li>
                   
@@ -195,62 +195,17 @@
 <p>O <em>machine learning</em> supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de <strong>variáveis descritivas</strong> (também chamadas de <strong><em>features</em></strong>) e uma <strong>variável alvo</strong> (também chamada de <strong><em>target</em></strong>). Esta forma de <em>machine learning</em> gera modelos que podem ser aplicados a dois
 tipos de problemas:</p>
 
-<p>    i. <strong>regressão</strong> $\rightarrow$ prever um <em>target</em> contínuo</p>
+<p>    i. <strong>regressão</strong> &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/45283d862073ed28e633f36af3fb1057.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=16.43840385pt height=3.84245565pt/&gt;&lt;/p&gt; prever um <em>target</em> contínuo</p>
 
-<p>    ii. <strong>regressão</strong> $\rightarrow$ prever um <em>target</em> categórico</p>
+<p>    ii. <strong>regressão</strong> &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/45283d862073ed28e633f36af3fb1057.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=16.43840385pt height=3.84245565pt/&gt;&lt;/p&gt; prever um <em>target</em> categórico</p>
 
 <p>Devido ao fato de o modelo aprendido em <em>machine learning</em> descrever as relações entre <em>features</em> e <em>targets</em>, é necessário o levantamento de um conjunto de dados (também chamado de <em>dataset</em>) que contenha exemplos (também chamados de <em>datapoints</em>) com os valores das <em>features</em> preenchidas e o <em>target</em> correto associado àquelas <em>features</em>. Por padrão, um dataset segue o formato apresentado na Tabela 1.</p>
 
-<p>\begin{table<em>}[t]
-  \caption{Formato de um \emph{dataset}. Por padrão, \emph{features} ficam nas colunas à esquerda enquanto o \emph{target} é colocado na última coluna mais à direita. Cada linha do \emph{dataset} corresponde a um \emph{datapoint} (i.e., as \emph{features} e o \emph{target} correspondente a um exemplo).}
-  \small
-  \centering
-  \setlength\tabcolsep{12pt}
-  \begin{tabular</em>}{0.6\textwidth}{c c c c c c c c}
-  \toprule  <br />
-    \multicolumn{6}{c}{\features} &amp; &amp; \target <br />
-      \cmidrule{1-6}  \cmidrule{8-8}
-    $x_1$  &amp; $x_2$ &amp; $x_3$ &amp; $x_4$ &amp; $x_5$ &amp; $x_6$ &amp; &amp; $y$ <br />
-  \midrule
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	\<br />
-  — &amp; — &amp; — &amp; — &amp; — &amp; — &amp; &amp; —	<br />
-  \bottomrule<br />
-  \end{tabular<em>}
-  \label{tab:features}
-\end{table</em>}</p>
+<p align="center">&lt;img src="/docs/machine_learning/tex/df69c6e3b6b563c9f7784ab480ebf76e.svg?invert_in_darkmode&amp;sanitize=true" align=middle width=700.2745645499999pt height=213.93602175pt/&gt;</p>
 
 <p>A Tabela 2 apresenta um exemplo de um <em>dataset</em> real. Esta é uma amostra do dataset <em>Iris</em> publicado em 1953 e que até hoje representa um caso típico de testes para modelos de <em>machine learning</em>.</p>
 
-<p>\begin{table}[th]
-  \caption{Amostra do clássico \dataset \myquote{Iris} para demonstrar um exemplo de \dataset com exemplos reais. O \myquote{Iris} foi introduzido por Ronald Fisher em 1936 e tornou-se um caso de teste típico para algoritmos de \ml. O \dataset é constituído por quatro \features (\featN{sepal length}, \featN{sepal width}, \featN{petal length} e \featN{petal width}) e um \target (\featN{species})}
-  \centering
-  \small
-  \setlength\tabcolsep{10pt}
-  \begin{tabular<em>}{0.58\textwidth}{c c c c c c}
-  \toprule
-    \featN{}	 &amp; \featN{sepal}	&amp; \featN{sepal} &amp; \featN{petal} &amp; \featN{petal} &amp; \featN{species}<br />
-    \featN{ID}	 &amp; \featN{length}	&amp; \featN{width} &amp; \featN{length} &amp; \featN{width} &amp; (\target)<br />
-  \midrule
-  1 &amp; 5.1 &amp; 3.5 &amp; 1.4 &amp; 0.2 &amp; setosa <br />
-  2 &amp; 4.9 &amp; 3.0 &amp; 1.4 &amp; 0.2 &amp; setosa <br />
-  3 &amp; 4.7 &amp; 3.2 &amp; 1.3 &amp; 0.2 &amp; setosa <br />
-  4 &amp; 7.0 &amp; 3.2 &amp; 4.7 &amp; 1.4 &amp; versicolor <br />
-  5 &amp; 6.4 &amp; 3.2 &amp; 4.5 &amp; 1.5 &amp; versicolor \ 
-  6 &amp; 6.9 &amp; 3.1 &amp; 4.9 &amp; 1.5 &amp; versicolor <br />
-  7 &amp; 6.3 &amp; 3.3 &amp; 6.0 &amp; 2.5 &amp; virginica <br />
-  8 &amp; 5.8 &amp; 2.7 &amp; 5.1 &amp; 1.9 &amp; virginica <br />
-  9 &amp; 7.1 &amp; 3.0 &amp; 5.9 &amp; 2.1 &amp; virginica <br />
-  \midrule
-    &amp; $x_1$ &amp; $x_2$ &amp; $x_3$ &amp; $x_4$ &amp; $y$ <br />
-  \bottomrule
-  \end{tabular</em>}
-  \label{tab:iris}
-\end{table}</p>
+<p align="center">&lt;img src="/docs/machine_learning/tex/dbef46babd15dbfba23f22f3816bb08c.svg?invert_in_darkmode&amp;sanitize=true" align=middle width=700.2746619pt height=271.05931215pt/&gt;</p>
 
 <p>Abaixo seguem algumas definições importantes que são utilizadas em machine learning:</p>
 
@@ -312,7 +267,7 @@ tipos de problemas:</p>
 
 <p>Vamos ilustrar a ideia de consistência e imperfeição com um exemplo. Imaginemos que uma rede de supermercados nos contratou para desenvolver um modelo de <em>machine learning</em> para realizar predições sobre seus consumidores. Estas predições devem classificar os consumidores nos grupos <code class="highlighter-rouge">Famílias</code>, <code class="highlighter-rouge">Casais sem filhos</code> e <code class="highlighter-rouge">Solteiros</code>.</p>
 
-<p>Esta rede de supermercados está disposta a lhe entregar um dataset com três <em>features</em> binárias que podem assumir os valores ${True; False}$. Como três <em>features</em> binárias produzem um total de $2^3=8$ combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.</p>
+<p>Esta rede de supermercados está disposta a lhe entregar um dataset com três <em>features</em> binárias que podem assumir os valores &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/a93406a236fc2dc8b0d842f4b7296bda.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=102.70201755pt height=16.438356pt/&gt;&lt;/p&gt;. Como três <em>features</em> binárias produzem um total de &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/e1712ce5b2bf8b7e5b2bc1ac4ef3a99f.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=45.730509pt height=14.202794099999998pt/&gt;&lt;/p&gt; combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.</p>
 
 <p>INCLUIR TABELA</p>
 
@@ -324,7 +279,7 @@ tipos de problemas:</p>
 
 <p>Se considerarmos os <em>datapoints</em> obtidos pela rede de supermercados, podemos eliminar combinações as quais possuem o target <code class="highlighter-rouge">Grupo</code> diferentes dos valores reais obtidos, como demonstrado na Tabela 8. As combinações restantes são aquelas chamadas de consistentes com o <em>dataset</em> da Tabela 7. Em outras palavras, estas combinações restantes conseguem produzir a resposta correta para cada <em>datapoint</em> do dataset.</p>
 
-<p>Entretanto, ainda temos um problema: das 8 possíveis combinações das <em>features</em> binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações $\mathbb{M}_2$,	$\mathbb{M}_4$ e $\mathbb{M}_5$ são combinações consistentes com o <em>dataset</em> e ao mesmo tempo divergem quanto ao <code class="highlighter-rouge">Grupo</code> que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o <em>dataset</em> que dizemos que o <em>machine learning</em> é um problema mal-posto, pois não há uma solução para esse problema!</p>
+<p>Entretanto, ainda temos um problema: das 8 possíveis combinações das <em>features</em> binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/0277529656b0e24a823900f871f45399.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=22.07771115pt height=13.7899245pt/&gt;&lt;/p&gt;,	&lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/2d1fec3c2ce0ae9930462a69207b2021.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=22.07771115pt height=13.7899245pt/&gt;&lt;/p&gt; e &lt;p align="center"&gt;&lt;img src=”/docs/machine_learning/tex/64cb013de16e3e9e92c25a517036b074.svg?invert_in_darkmode&amp;sanitize=true” align=middle width=22.07771115pt height=13.7899245pt/&gt;&lt;/p&gt; são combinações consistentes com o <em>dataset</em> e ao mesmo tempo divergem quanto ao <code class="highlighter-rouge">Grupo</code> que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o <em>dataset</em> que dizemos que o <em>machine learning</em> é um problema mal-posto, pois não há uma solução para esse problema!</p>
 
 <p>Consistência pode ser interpretada como uma forma de <strong>memorização</strong> por parte do modelo. Contudo, os <em>datapoints</em> em um dataset podem conter diversas formas de ruídos, como por exemplo preenchimentos incorretos de valores, valores faltando, até mesmo exceções onde o valor é de fato correto mas tão incomum que parece estar incorreto. Nestes casos, a memorização torna-se uma característica indesejada para um modelo de <em>machine learning</em>.</p>
 
