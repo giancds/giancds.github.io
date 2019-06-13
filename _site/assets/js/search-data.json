@@ -1,0 +1,45 @@
+{
+  "0": {
+    "id": "0",
+    "title": "",
+    "content": "404 Page not found :( The requested page could not be found.",
+    "url": "http://localhost:4000/404.html",
+    "relUrl": "/404.html"
+  },
+  "1": {
+    "id": "1",
+    "title": "About",
+    "content": "Olá, me chamo Giancarlo, mas você pode me chamar de Gian. Eu sou apaixonado por machine learning e processamento de linguagem natural (PLN), especialmente language models e neural machine translation. Eu também gosto muito de deep learning, Pokemón Go (giancds mystic lvl. 40) e levantamento de peso olímpico. Eu leio bastante sobre tudo, não sei nadar, posso beber até 7 xícaras de café em um dia e sou um péssimo piadista. Fiz meu doutorado em Ciência da Computação com ênfase em machine learning aplicado a PLN no Dublin Institute of Technology - DIT (hoje Technological University Dublin - TUD) na Irlanda, sob orientação do Prof. John D. Kelleher e do Dr. Robert J. Ross. Também fiz pós-doutorado em deep learning aplicado a language models no ADAPT Centre na Irlanda sob supervisão do Prof. John D. Kelleher. Aqui você encontra uma lista atualizada de minhas publicações, tanto em Inglês quanto em Português.",
+    "url": "http://localhost:4000/about/",
+    "relUrl": "/about/"
+  },
+  "2": {
+    "id": "2",
+    "title": "",
+    "content": "",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },
+  "3": {
+    "id": "3",
+    "title": "Introdução ao Machine Learning",
+    "content": "Machine Learning é a disciplina da Inteligência Artificial a qual estuda a criação de agentes inteligentes que aprendem através da experiência. Desta forma, ao contrário da Inteligência Artificial clássica, o agente inteligente não tem seu conhecimento programado durante sua criação, mas ele é programado para aprender a alcançar o objetivo para o qual foi desenvolvido. Embora alguns autores definam machine learning como sendo o aprendizado através de exemplos, esta definição exclui o aprendizado por reforço positivo1 (do Inglês Reinforcement Learning - RL) onde o agente aprende praticando a tarefa sem quaisquer tipos de respostas, recebendo apenas um feedback sobre o quão bem está executando aquela tarefa. A definição de aprendizado através de exemplos é mais adequada às áreas de machine learning supervisionado e machine learning não-supervisionado (ou sem supervisão). O machine learning supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de variáveis descritivas (também chamadas de features) e uma variável alvo (também chamada de target). Esta forma de machine learning gera modelos que podem ser aplicados a dois tipos de problemas:     i. regressão $ rightarrow$ prever um target contínuo     ii. regressão $ rightarrow$ prever um target categórico Devido ao fato de o modelo aprendido em machine learning descrever as relações entre features e targets, é necessário o levantamento de um conjunto de dados (também chamado de dataset) que contenha exemplos (também chamados de datapoints) com os valores das features preenchidas e o target correto associado àquelas features. Por padrão, um dataset segue o formato apresentado na Tabela 1.",
+    "url": "http://localhost:4000/docs/machine_learning/intro_ml.html",
+    "relUrl": "/docs/machine_learning/intro_ml.html"
+  },
+  "4": {
+    "id": "4",
+    "title": "Machine Learning",
+    "content": "Nesta seção, irei publicar alguns artigos sobre machine learning e deep lerning, incluindo notas de aula, resumos e tutoriais.",
+    "url": "http://localhost:4000/docs/machine_learning",
+    "relUrl": "/docs/machine_learning"
+  },
+  "5": {
+    "id": "5",
+    "title": "Publicações",
+    "content": "Note que as publicações mais recentes estão disponíveis apenas em Inglês.",
+    "url": "http://localhost:4000/docs/publications.html",
+    "relUrl": "/docs/publications.html"
+  }
+  
+}
