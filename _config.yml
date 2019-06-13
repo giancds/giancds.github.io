@@ -1,112 +1,42 @@
-# Permalinks
+# Welcome to Jekyll!
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
-#permalink:           pretty
-permalink: /blog/:year/:month/:day/:title/
-relative_permalinks: false
-encoding: utf-8
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Setup
-title:               Giancarlo Salton's personal website
-#tagline:             'foo's website
-description:         Ph.D. student passionate about Machine Learning and Natural Language Processing.
-url: https://giancds.github.io
-# url: http://localhost:4000
-baseurl: ""
-urlimg: "/images/"
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Blog do Gian
+email: giancds@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Eu escrevo sobre inteligência artificial, machine learning, deep learning e ciência de dados 
+  em geral.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
 markdown: kramdown
-paginate: 5
-paginate_path: "/blog/page:num"
-excerpt_separator: <!--more-->
-default_bg: sitebg.jpg
-default_logo: sitelogo.png
-safe: false
-#timezone:    America/Chicago
-future:      true
+theme: just-the-docs
+plugins:
+  - jekyll-feed
 
-
-## code highlight options
-syntax_highlighter: rouge
-input: GFM
-
-gems:
-  - jekyll-paginate
-  - jemoji
-  - font-awesome-sass
-  - kramdown
-  - rouge
-  - jekyll-mentions
-
-jekyll-mentions:
-  base_url: https://twitter.com
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
-
-# About/contact
-author:
-  name:              Giancarlo Salton
-  url:               https://twitter.com/giancds
-  avatar:         gian.jpg
-  #email:
-
-# Owner/author information
-owner:
-  name:           Giancarlo Salton
-  avatar:         gian.jpg
-  #email:
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        giancds
-  facebook:
-  github:         giancds
-  stackexchange:
-  linkedin:       https://www.linkedin.com/in/giancds
-  instagram:
-  flickr:
-  tumblr:
-  google_plus:
-  # orcid and google scholar IDs are different than standard username.
-  orcid:
-  gscholar: UGZ_atEAAAAJ
-
-## sidebar links:
-# For external links add external: true
-links:
-  - title: <i class="iconside iconm-home"></i> Home
-    url: /
-  - title: <i class="iconside iconm-user"></i> About
-    url: /about/
-  - title: <i class="iconside iconm-quill"></i> Blog
-    url: /blog/
-  - title: <i class="fa fa-tags"></i> Tags
-    url: /tags/
-  - title: <i class="fa fa-archive"></i> Archive
-    url: /archive/
-    external: true
-  - title: <i class="iconside iconm-envelop"></i> Contact
-    url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
-  - title: <i class="iconside iconm-feed2"></i> Feed
-    url: /feed.xml
-
-# Google Custom Search:
-#google_search: xyz123abc
-
-# Twitter stream widget:
-# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
-#twitter_widget_id: xyz123abc
-
-# Add disqus username for Disqus comment board:
-disqus_shortname: Gian
-
-# Analytics and webmaster tools stuff goes here
-#google_analytics:   xyz123abc
-
-#### For dummy website only - remove if you wish ####
-# github_repo: https://github.com/dyndna/lanyon-plus
-# version: 1.1.1
-## END ##
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
