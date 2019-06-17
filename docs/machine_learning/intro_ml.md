@@ -14,20 +14,31 @@ Embora alguns autores definam *machine learning* como sendo o **aprendizado atra
 O *machine learning* supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de **variáveis descritivas** (também chamadas de ***features***) e uma **variável alvo** (também chamada de ***target***). Esta forma de *machine learning* gera modelos que podem ser aplicados a dois
 tipos de problemas:
 
-&nbsp;&nbsp;&nbsp;&nbsp;i. **regressão** <p align="center"><img src="/docs/machine_learning/tex/45283d862073ed28e633f36af3fb1057.svg?invert_in_darkmode&sanitize=true" align=middle width=16.43840385pt height=3.84245565pt/></p> prever um *target* contínuo
+&nbsp;&nbsp;&nbsp;&nbsp;i. **regressão**: prever um *target* contínuo
 
-&nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão** <p align="center"><img src="/docs/machine_learning/tex/45283d862073ed28e633f36af3fb1057.svg?invert_in_darkmode&sanitize=true" align=middle width=16.43840385pt height=3.84245565pt/></p> prever um *target* categórico
+&nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão**: prever um *target* categórico
 
 Devido ao fato de o modelo aprendido em *machine learning* descrever as relações entre *features* e *targets*, é necessário o levantamento de um conjunto de dados (também chamado de *dataset*) que contenha exemplos (também chamados de *datapoints*) com os valores das *features* preenchidas e o *target* correto associado àquelas *features*. Por padrão, um dataset segue o formato apresentado na Tabela 1.
 
-<p align="center"><img src="/docs/machine_learning/tex/df69c6e3b6b563c9f7784ab480ebf76e.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2745645499999pt height=213.93602175pt/></p>
+<p align="center">
+<br/><br/>
+  <img src='/assets/img/features.png' width='70%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 1: Formato de um dataset. Por padrão, features ficam nas colunas à esquerda enquanto o target é colocado na última coluna mais à direita. Cada linha do dataset corresponde a um datapoint (i.e., as features e o target correspondente a um exemplo).</div><br/><br/>
 
-A Tabela 2 apresenta um exemplo de um *dataset* real. Esta é uma amostra do dataset *Iris* publicado em 1953 e que até hoje representa um caso típico de testes para modelos de *machine learning*.
 
+A Tabela 2 apresenta um exemplo de um *dataset* real. Esta é uma amostra do *dataset* *Iris* publicado
+em 1953 e que até hoje representa um caso típico de testes para modelos de *machine learning*.
 
-<p align="center"><img src="/docs/machine_learning/tex/dbef46babd15dbfba23f22f3816bb08c.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2746619pt height=271.05931215pt/></p>
-
-
+<!-- ![Tabela 2: Amostra do clássico *dataset* “Iris” para demonstrar um exemplo real. O “Iris” foi introduzido por Ronald Fisher em 1936 e tornou-se um caso de teste típico para algoritmos
+de *machine learning*. O dataset é constituído por quatro *features* e um *target* (`species`).](/assets/img/iris.png) -->
+<p align="center">
+<br/><br/>
+  <img src='/assets/img/iris.png' width='70%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">
+Tabela 2: Amostra do clássico <i>dataset</i> “Iris” para demonstrar um exemplo real. O “Iris” foi introduzido por Ronald Fisher em 1936 e tornou-se um caso de teste típico para algoritmos
+de <i>machine learning</i>. O dataset é constituído por quatro <i>features</i> e um <i>target</i>.</div><br/><br/>
 
 Abaixo seguem algumas definições importantes que são utilizadas em machine learning:
 
@@ -49,9 +60,35 @@ Abaixo seguem algumas definições importantes que são utilizadas em machine le
 
 A Figura 1 ilustra o processo de “aprendizado” de *machine learning*. Um *dataset* contendo *features* e *targets* é fornecido como entrada para um algoritmo que por sua vez gera um modelo. Depois que o modelo for gerado, podemos pegar uma *query* e obter uma predição para determinar qual a resposta (i.e., o *target*) correta para aquela instância. A Figura 2 ilustra o processo de predição.
 
+<!-- ![Figura 1: Amostra do clássico *dataset* “Iris” para demonstrar um exemplo real. O “Iris” foi introduzido por Ronald Fisher em 1936 e tornou-se um caso de teste típico para algoritmos de *machine learning*. O dataset é constituído por quatro *features* e um *target* (`species`).](/assets/img/proc_ml.png) -->
+
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/proc_ml.png' width='70%'>  
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">
+Figura 1: Processo de “aprendizagem” de um modelo de <i>machine learning</i>.<br/><br/></div>
+
+<!-- ![Figura 2: Amostra do clássico *dataset* “Iris” para demonstrar um exemplo real. O “Iris” foi introduzido por Ronald Fisher em 1936 e tornou-se um caso de teste típico para algoritmos de *machine learning*. O dataset é constituído por quatro *features* e um *target* (`species`).](/assets/img/proc_pred.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/proc_pred.png' width='70%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">
+Figura 2: Processo de “predição” de um modelo de <i>machine learning</i>.</div><br/><br/>
+
 ### 1.1 - Um pequeno exemplo
 
 Suponhamos que o *dataset* contido na Tabela 3 nos foi fornecido e precisamos extrair manualmente um modelo para fazer predições. Qual(is) a(s) regra(s) que definem as relações entre *features* e *target* deste dataset?
+
+
+
+<!-- ![Tabela 3: Exemplo de um dataset contendo três *features* e um *target*.](/assets/img/financeira_simples.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/financeira_simples.png' width='70%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 3: Exemplo de um dataset contendo três <i>features</i> e um <i>target</i>.</div><br/><br/>
 
 Após alguma análise, podemos propor o algoritmo abaixo (demonstrado utilizando a linguagem *python*):
 
@@ -66,7 +103,15 @@ Bastante simples, não? Este é um exemplo de um modelo de predições (ou seja,
 
 Agora, vamos dificultar as coisas. Suponhamos o *dataset* contido na Tabela 4. 
 
-INCLUIR TABELA
+
+
+
+<!-- ![Tabela 4: Exemplo de um dataset contendo seis *features* e um *target*.](/assets/img/financeira_complexa.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/financeira_complexa.png' width='90%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 4: Exemplo de um dataset contendo três <i>features</i> e um <i>target</i>.</div><br/><br/>
 
 Após uma análise minuciosa deste *dataset*, podemos propor o algoritmo abaixo (demonstrado utilizando a linguagem *python*):
 
@@ -91,19 +136,46 @@ A forma mais fácil e eficaz para gerar um modelo é buscar dentre os modelos po
 
 Vamos ilustrar a ideia de consistência e imperfeição com um exemplo. Imaginemos que uma rede de supermercados nos contratou para desenvolver um modelo de *machine learning* para realizar predições sobre seus consumidores. Estas predições devem classificar os consumidores nos grupos `Famílias`, `Casais sem filhos` e `Solteiros`.
 
-Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores <p align="center"><img src="/docs/machine_learning/tex/a93406a236fc2dc8b0d842f4b7296bda.svg?invert_in_darkmode&sanitize=true" align=middle width=102.70201755pt height=16.438356pt/></p>. Como três *features* binárias produzem um total de <p align="center"><img src="/docs/machine_learning/tex/e1712ce5b2bf8b7e5b2bc1ac4ef3a99f.svg?invert_in_darkmode&sanitize=true" align=middle width=45.730509pt height=14.202794099999998pt/></p> combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.
+Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores {`True`, `False`}. Como três *features* binárias produzem um total de `2`<sup>`3`</sup> `= 8` combinações,  decidimos construir uma tabela com todas as possíveis combinações destas *features* antes mesmo de inspecionarmos algum *dataset*. Estas combinações estão reproduzidas na Tabela 5.
 
-INCLUIR TABELA
+
+<!-- ![Tabela 5: Combinações possíveis para três *features* binárias sem conhecermos os valores dos *targets*.](/assets/img/familia_questions.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/familia_questions.png' width='60%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 5: Combinações possíveis para três <i>features</i> binárias sem conhecermos os valores dos <i>targets</i>.</div><br/><br/>
 
 Quando passamos a considerar os valores para o `Grupo` sem termos recebido os valores corretos para o *target* de cada datapoint, o número de combinações diferentes para o *dataset* sobe para 6561! A partir dessas combinações que consideram o *target*, podemos procurar por uma combinação que possa servir como modelo para fazer predições sobre os consumidores do mercado. Uma amostra destas combinações está disponível na Tabela 6.
 
-INCLUIR TABELA
+
+
+<!-- ![Tabela 6: Amostra de combinações possíveis para três *features* binárias quando passamos a considerar os valores para o *target*. A partir da incusão do target, passamos a ter 6561 soluções possíveis ao invés de apenas 8.](/assets/img/familia_expandida.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/familia_expandida.png' width='90%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 6: Amostra de combinações possíveis para três <i>features</i> binárias quando passamos a considerar os valores para o <i>target</i>. A partir da incusão do <i>target</i>, passamos a ter 6561 soluções possíveis ao invés de apenas 8.</div><br/><br/>
 
 Suponhamos então que a rede de supermercados conduziu uma pesquisa entre seus consumidores e que o número de respostas obtido foi baixo. Apenas cinco *datapoints* foram obtidos conforme demonstrado na Tabela 7.
 
 Se considerarmos os *datapoints* obtidos pela rede de supermercados, podemos eliminar combinações as quais possuem o target `Grupo` diferentes dos valores reais obtidos, como demonstrado na Tabela 8. As combinações restantes são aquelas chamadas de consistentes com o *dataset* da Tabela 7. Em outras palavras, estas combinações restantes conseguem produzir a resposta correta para cada *datapoint* do dataset.
 
-Entretanto, ainda temos um problema: das 8 possíveis combinações das *features* binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações <p align="center"><img src="/docs/machine_learning/tex/0277529656b0e24a823900f871f45399.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771115pt height=13.7899245pt/></p>,	<p align="center"><img src="/docs/machine_learning/tex/2d1fec3c2ce0ae9930462a69207b2021.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771115pt height=13.7899245pt/></p> e <p align="center"><img src="/docs/machine_learning/tex/64cb013de16e3e9e92c25a517036b074.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771115pt height=13.7899245pt/></p> são combinações consistentes com o *dataset* e ao mesmo tempo divergem quanto ao `Grupo` que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o *dataset* que dizemos que o *machine learning* é um problema mal-posto, pois não há uma solução para esse problema!
+<!-- ![Tabela 7: Conjunto de *datapoints* obtidos pela rede de supermercados fictícia.](/assets/img/familia.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/familia.png' width='60%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 7: Conjunto de <i>datapoints</i> obtidos pela rede de supermercados fictícia.</div><br/><br/>
+
+Entretanto, ainda temos um problema: das 8 possíveis combinações das *features* binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações `M`<sub>`2`</sub>, `M`<sub>`3`</sub> e `M`<sub>`4`</sub> são combinações consistentes com o *dataset* e ao mesmo tempo divergem quanto ao `Grupo` que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o *dataset* que dizemos que o *machine learning* é um problema mal-posto, pois não há uma solução para esse problema!
+
+<!-- ![Tabela 8: Amostra de combinações consistentes com os valores obtidos pela rede de supermercados fictícia. As combinações sombreadas são combinações as quais possuem valores para o *target* que não estão corretas de acordo com os valores obtidos, i.e., são combinações inválidas.](/assets/img/familia_overlay.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/familia_overlay.png' width='90%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">Tabela 8: Amostra de combinações consistentes com os valores obtidos pela rede de supermercados fictícia. As combinações sombreadas são combinações as quais possuem valores para o <i>target</i> que não estão corretas de acordo com os valores obtidos, i.e., são combinações inválidas.</div><br/><br/>
 
 Consistência pode ser interpretada como uma forma de **memorização** por parte do modelo. Contudo, os *datapoints* em um dataset podem conter diversas formas de ruídos, como por exemplo preenchimentos incorretos de valores, valores faltando, até mesmo exceções onde o valor é de fato correto mas tão incomum que parece estar incorreto. Nestes casos, a memorização torna-se uma característica indesejada para um modelo de *machine learning*.
 
@@ -111,11 +183,11 @@ Ao mesmo tempo que buscamos um modelo consistente, procuramos também um modelo 
 
 O *machine learning* faz uma série de suposições que auxiliam a definir os critérios de seleção de um modelo. Estas suposições são chamados viéses indutivos (do Inglês ***inductive bias***):
 
-&nbsp;&nbsp;&nbsp;&nbsp;a.viés de restrição (***restriction bias***): limita o tipo de modelo que será aprendido.
+&nbsp;&nbsp;&nbsp;&nbsp;a. viés de restrição (***restriction bias***): limita o tipo de modelo que será aprendido.
 
 &nbsp;&nbsp;&nbsp;&nbsp;b. viés de preferência (***preference bias***): limita o algoritmo para que prefira alguns tipos de modelo em detrimento a outros modelos.
 
-Por exemplo, consideremos o Iterative Dichotomizer 3 - (ID3), o algoritmo padrão para métodos baseados em informação<sup>3</sup>. Este algoritmo possui um *restriction bias* que o limita a aprender um modelo em formato de árvore que codifica em cada galho um “teste” em uma determinada *feature* enquanto o seu *preference bias* limita-o a buscar pela árvore que contenha o menor número possível de níveis.
+Por exemplo, consideremos o Iterative Dichotomizer 3 - (ID3), o algoritmo padrão para métodos baseados em informação. Este algoritmo possui um *restriction bias* que o limita a aprender um modelo em formato de árvore que codifica em cada galho um “teste” em uma determinada *feature* enquanto o seu *preference bias* limita-o a buscar pela árvore que contenha o menor número possível de níveis.
 
 ### 2.1 - O que pode dar errado com o *machine learning*?
 
@@ -123,6 +195,23 @@ Até agora vimos que o *machine learning* pode ser bastante útil para criarmos 
 
 *Underfitting* ocorre quando o modelo aprendido através do *inductive bias* é muito simples para capturar as relações entre *features* e *targets*. *Overfitting*, ao contrário, ocorre quando o modelo aprendido através do *inductive bias* é demasiado complexo para capturar as relações entre *features* e *targets*. A Figura 3 exibe um exemplo de *underfitting* e *overfitting*.
 
+
+
+<!-- ![Figura 3: Representação dos conceitos de underfitting e overfitting. Suponhamos que queremos aprender relação exibida em (a). Se o modelo for muito simples como exibido em (b), o problema de underfitting irá ocorrer. Caso o modelo seja muito complexo como exibido em (c), teremos um problema de overfitting. O modelo exibido em (d) mesmo contendo alguns pequenos desvios (muito provavelmente em função de ruídos no dataset) é mais próximo daquilo que procuramos.](/assets/img/under_over.png) -->
+<p align="center">
+  <br/><br/>
+  <img src='/assets/img/under_over.png' width='90%'>
+</p>
+<div style="width:image width px; font-size:80%; text-align:center;">
+Figura 3: Representação dos conceitos de <i>underfitting</i> e <i>overfitting</i>. Suponhamos que queremos aprender relação exibida em (a). Se o modelo for muito simples como exibido em (b), o problema de <i>underfitting</i> irá ocorrer. Caso o modelo seja muito complexo como exibido em (c), teremos um problema de <i>overfitting</i>. O modelo exibido em (d) mesmo contendo alguns pequenos desvios (muito provavelmente em função de ruídos no dataset) é mais próximo daquilo que procuramos.</div><br/><br/>
+
 ## 3 - Resumo
 
 Em resumo, um algoritmo de *machine learning* aprende a relação entre *features* e *targets* a partir de exemplos contidos em um *dataset*. Além disso, *machine learning* é considerado um problema malposto devido a quatros fatores: a) precisa generalizar a além do *dataset* que por sua vez é apenas uma amostra; b) precisa de um conjunto de suposições que são necessárias para o aprendizado (*inductive bias*); c) *underfitting*; e d) *overfitting*. Encontrar o balanço entre complexidade e simplicidade é uma forma de arte do *machine learning* e, também, a parte mais difícil de prática.
+<br/><br/>
+---
+<div style="width:image width px; font-size:80%">
+<sup>1</sup> Embora sua área de estudo seja tão ampla e diversa quanto a do próprio *machine learning*, o *reinforcement learning* continua sendo uma forma de *machine learning*.
+<br/><br/>
+<sup>2</sup> Design e seleção de *features* são partes muito importantes do *machine learning*. 
+</div>
