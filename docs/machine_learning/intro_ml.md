@@ -14,7 +14,6 @@ Embora alguns autores definam *machine learning* como sendo o **aprendizado atra
 O *machine learning* supervisionado envolve o aprendizado de um modelo que descreve as relações entre um conjunto de **variáveis descritivas** (também chamadas de ***features***) e uma **variável alvo** (também chamada de ***target***). Esta forma de *machine learning* gera modelos que podem ser aplicados a dois
 tipos de problemas:
 
-<<<<<<< HEAD
 &nbsp;&nbsp;&nbsp;&nbsp;i. **regressão**: prever um *target* contínuo
 
 &nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão**: prever um *target* categórico
@@ -26,21 +25,6 @@ Devido ao fato de o modelo aprendido em *machine learning* descrever as relaçõ
   <img src='/assets/img/features.png' width='70%'>
 </p>
 <div style="width:image width px; font-size:80%; text-align:center;">Tabela 1: Formato de um dataset. Por padrão, features ficam nas colunas à esquerda enquanto o target é colocado na última coluna mais à direita. Cada linha do dataset corresponde a um datapoint (i.e., as features e o target correspondente a um exemplo).</div><br/><br/>
-
-=======
-&nbsp;&nbsp;&nbsp;&nbsp;i. **regressão** <img src="/docs/machine_learning/tex/e5d134f35dc4949fab12ec64d186248a.svg?invert_in_darkmode&sanitize=true" align=middle width=16.43840384999999pt height=14.15524440000002pt/> prever um *target* contínuo
-
-&nbsp;&nbsp;&nbsp;&nbsp;ii. **regressão** <img src="/docs/machine_learning/tex/e5d134f35dc4949fab12ec64d186248a.svg?invert_in_darkmode&sanitize=true" align=middle width=16.43840384999999pt height=14.15524440000002pt/> prever um *target* categórico
-
-Devido ao fato de o modelo aprendido em *machine learning* descrever as relações entre *features* e *targets*, é necessário o levantamento de um conjunto de dados (também chamado de *dataset*) que contenha exemplos (também chamados de *datapoints*) com os valores das *features* preenchidas e o *target* correto associado àquelas *features*. Por padrão, um dataset segue o formato apresentado na Tabela 1.
-
-<p align="center"><img src="/docs/machine_learning/tex/31b8c6daa45a054c44c15e87652bddaf.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2745645499999pt height=213.93602175pt/></p>
-
-A Tabela 2 apresenta um exemplo de um *dataset* real. Esta é uma amostra do dataset *Iris* publicado em 1953 e que até hoje representa um caso típico de testes para modelos de *machine learning*.
-
-
-<p align="center"><img src="/docs/machine_learning/tex/0ce66db84a2ec2ea5a80fb79007bdda8.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2746619pt height=271.05931215pt/></p>
->>>>>>> 9d32fe4c8940e8f39b462c3afe621ffa1376411f
 
 A Tabela 2 apresenta um exemplo de um *dataset* real. Esta é uma amostra do *dataset* *Iris* publicado
 em 1953 e que até hoje representa um caso típico de testes para modelos de *machine learning*.
@@ -151,12 +135,8 @@ A forma mais fácil e eficaz para gerar um modelo é buscar dentre os modelos po
 
 Vamos ilustrar a ideia de consistência e imperfeição com um exemplo. Imaginemos que uma rede de supermercados nos contratou para desenvolver um modelo de *machine learning* para realizar predições sobre seus consumidores. Estas predições devem classificar os consumidores nos grupos `Famílias`, `Casais sem filhos` e `Solteiros`.
 
-<<<<<<< HEAD
 Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores {`True`, `False`}. Como três *features* binárias produzem um total de `2`<sup>`3`</sup> `= 8` combinações,  decidimos construir uma tabela com todas as possíveis combinações destas *features* antes mesmo de inspecionarmos algum *dataset*. Estas combinações estão reproduzidas na Tabela 5.
 
-=======
-Esta rede de supermercados está disposta a lhe entregar um dataset com três *features* binárias que podem assumir os valores <img src="/docs/machine_learning/tex/538d28f6c5d6377063c2ce88536ddb42.svg?invert_in_darkmode&sanitize=true" align=middle width=102.70201755pt height=24.65753399999998pt/>. Como três *features* binárias produzem um total de <img src="/docs/machine_learning/tex/a1d3e6ee2ea8e9dff755dc407006e581.svg?invert_in_darkmode&sanitize=true" align=middle width=45.730508999999984pt height=26.76175259999998pt/> combinações, antes de olharmos para o dataset decidimos construir uma tabela com todas as possíveis combinações destas features. Estas combinações estão reproduzidas na Tabela 5.
->>>>>>> 9d32fe4c8940e8f39b462c3afe621ffa1376411f
 
 <!-- ![Tabela 5: Combinações possíveis para três *features* binárias sem conhecermos os valores dos *targets*.](/assets/img/familia_questions.png) -->
 <p align="center">
@@ -180,7 +160,6 @@ Suponhamos então que a rede de supermercados conduziu uma pesquisa entre seus c
 
 Se considerarmos os *datapoints* obtidos pela rede de supermercados, podemos eliminar combinações as quais possuem o target `Grupo` diferentes dos valores reais obtidos, como demonstrado na Tabela 8. As combinações restantes são aquelas chamadas de consistentes com o *dataset* da Tabela 7. Em outras palavras, estas combinações restantes conseguem produzir a resposta correta para cada *datapoint* do dataset.
 
-<<<<<<< HEAD
 <!-- ![Tabela 7: Conjunto de *datapoints* obtidos pela rede de supermercados fictícia.](/assets/img/familia.png) -->
 <p align="center">
   <br/><br/>
@@ -196,9 +175,7 @@ Entretanto, ainda temos um problema: das 8 possíveis combinações das *feature
   <img src='/assets/img/familia_overlay.png' width='90%'>
 </p>
 <div style="width:image width px; font-size:80%; text-align:center;">Tabela 8: Amostra de combinações consistentes com os valores obtidos pela rede de supermercados fictícia. As combinações sombreadas são combinações as quais possuem valores para o <i>target</i> que não estão corretas de acordo com os valores obtidos, i.e., são combinações inválidas.</div><br/><br/>
-=======
-Entretanto, ainda temos um problema: das 8 possíveis combinações das *features* binárias, apenas 5 foram obtidas e, por isso, temos três combinações que nunca foram vistas! Se olharmos novamente para a Tabela 8, as combinações <img src="/docs/machine_learning/tex/c4f2a02af909d30254bc52b8b0b9daf1.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771114999999pt height=22.648391699999998pt/>,	<img src="/docs/machine_learning/tex/0be82563208d71d0c3899fd6864f8301.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771114999999pt height=22.648391699999998pt/> e <img src="/docs/machine_learning/tex/0d649cecf09f38776ad6cf104cc0af58.svg?invert_in_darkmode&sanitize=true" align=middle width=22.07771114999999pt height=22.648391699999998pt/> são combinações consistentes com o *dataset* e ao mesmo tempo divergem quanto ao `Grupo` que deve ser atribuído aos três casos que não foram vistos. Qual destas três combinações devemos escolher como sendo o modelo final? É exatamente pelo fato de podermos obter mais de um modelo consistente com o *dataset* que dizemos que o *machine learning* é um problema mal-posto, pois não há uma solução para esse problema!
->>>>>>> 9d32fe4c8940e8f39b462c3afe621ffa1376411f
+
 
 Consistência pode ser interpretada como uma forma de **memorização** por parte do modelo. Contudo, os *datapoints* em um dataset podem conter diversas formas de ruídos, como por exemplo preenchimentos incorretos de valores, valores faltando, até mesmo exceções onde o valor é de fato correto mas tão incomum que parece estar incorreto. Nestes casos, a memorização torna-se uma característica indesejada para um modelo de *machine learning*.
 
